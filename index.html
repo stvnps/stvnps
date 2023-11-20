@@ -34,16 +34,19 @@
           
         }
         .nb{
+          border: 2px solid black;
+          border-radius: 10px;
           text-align: center;
-          width: 280px;
-          height: 450px;
+          width: 340px;
+          height: 600px;
           padding: 22px -5px;
           margin: 2px 100px;
-          background-color: white;
+          background-color: rgba(249, 249, 107, 0.164);
+          box-shadow: 4px 3px 5px black;
         }
         #card1{
-          width: 300px;
-            height: 200px;
+          width: 325px;
+            height: 300px;
             margin: 0%;
             background-image: url(DIRECTOR.jpg);
             background-size: cover;
@@ -51,8 +54,10 @@
             text-align: center; 
         }
         #card2{
+          padding: 10px;
+          text-align: center;
           width: 300px;
-          height: 200px;
+          height: 250px;
           margin: 0px;
           background-color: white;
         }
@@ -71,9 +76,41 @@
         }
         .maindiv{
           display: flex;
+          flex-wrap: wrap;
           justify-content: center;
           padding: 30px;
           
+        }
+        .wp{
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+        .w{
+          text-align: center;
+          width: 600px;
+          height: 450px;
+          padding: 22px -5px;
+          margin: 2px 100px;
+          background-color: white;
+        }
+        .footer{
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          margin: 0px;
+          padding: 0px;
+          border: 1px solid black;
+          background-color: rgba(66, 2, 2, 0.721);
+          color: white;
+        }
+        #add{
+          margin: 50px;
+          
+          
+        }
+        .ql{
+          padding: 50px;
         }
         
         
@@ -85,12 +122,15 @@
 
 
   <body>
+    
 
     <!-- NAME & LOGO -->
     <div class="top">
         <div><img src="new.png" id="logo" alt="error loading image"></div>
         <div><img src="name.png" id="name" alt="error loading image"></div>
     </div>
+
+    
 
     <!-- NAVIGATION BAR -->
 
@@ -110,8 +150,8 @@
               <li class="nav-item">
                 <a class="nav-link" href="facility.html">FACILITY</a>
               </li>
-                <a class="nav-link" href="contact.html"></a>
-              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">CONTACT</a>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="gallary.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   GALLARY
@@ -177,13 +217,23 @@
           <p>STRENGTH IS LIFE & WEAKNESS IS DEATH</p>
        </div>
 
+       <!-- WELCOME PARA -->
+
+       <div class="wp">
+        <div class="w">
+          <h4>WELCOME TO ST. V. N. PUBLIC SCHOOL</h4>
+          <P>St. V. N. Public School, affiliated to Central Board of Secondary Education (CBSE) is located at Lakshagrih Road, Handia, Prayagraj. </P>
+        </div>
+      </div>
+
+
       <div class="maindiv">
 
                    <!-- CARD STARTS -->
 
       <div class="card">
         <div id="card1"></div>
-        <div id="card2">hello my name is mr ram lakhan yadav i am owner of this school i always focus on quality education and its true that hardworking is key to success</div>
+        <div id="card2"><h4>DIRECTOR'S MESSAGE</h4><p>We are pleased that you have taken the time to visit our website. We are committed to forster the growth and development of the children placed in our care. We aim to train them into value based, broad minded and creative children. </p></div>
       </div>
 
       <!--NOTICE BOARD STARTS-->
@@ -197,8 +247,49 @@
 
 
       </div>
+      
     
+<!-- ADDRESS -->
+<div class="footer">
+  
+  
+  <div id="add">
+    <h4>ADDRESS</h4>
+    <h6>Lakshagrih Road, Handia, Prayagraj, U.P.</h6>
+    <h6>Pin Code - 221503</h6>
+  </div>
 
+  <!-- QUICK LINKS -->
+
+  <div class="ql">
+    <h4>QUICK LINKS</h4>
+    <div>
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">ABOUT US</a>
+        <li class="nav-item">
+          <a class="nav-link" href="facility.html">FACILITY</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">CONTACT</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="gallary.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            GALLARY
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="image.html">IMAGES</a></li>
+            <li><a class="dropdown-item" href="video.html">VIDEOS</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="other.html">OTHER</a></li>
+          </ul>
+        </li>
+      </ul>
+
+  </div>
+</div>
   
 
 
