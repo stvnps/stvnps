@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>St.V.N. PUBLIC SCHOOL</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <style>
           .top{
@@ -23,6 +23,55 @@
             width: 350px;
 
         }
+        .box{
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          border: 2px solid black;
+          border-radius: 10px;
+          padding: 30px;
+          margin: 20px;
+          background-color: rgba(189, 189, 189, 0.13);
+          color: rgb(0, 0, 0);
+          font-weight: bold;
+          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+          box-shadow: 4px 3px 5px rgb(255, 52, 52);
+          background-image: linear-gradient(to top, rgb(211, 211, 204), rgb(255, 226, 226));
+          
+        }
+        /* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
 
     </style>
   </head>
@@ -70,5 +119,31 @@
         </div>
       </nav>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <div class="container">
+      <form action="action_page.php">
+    
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    
+        <label for="lname">Contact No.</label>
+        <input type="text" id="lname" name="lastname" placeholder="Type your contact no.">
+    
+      
+    
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    
+        <input type="submit" value="Submit">
+    
+      </form>
+    </div>
+    
+    <div id="box6" class="box">
+      <h4>CONTACT</h4>
+      <p>Address - Lakshagrih Road, Handia, Prayagraj (Uttar Pradesh) &nbsp; Pincode - 221503 &nbsp; Phone No. 6393407922, 6392319561 </p>
+    </div>
   </body>
 </html>
