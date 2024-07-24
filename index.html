@@ -1,632 +1,801 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>ST V.N. PUBLIC SCHOOL</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>St.V.N. PUBLIC SCHOOL</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+
+    <link rel="stylesheet" href="open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="animate.css">
     
+    <link rel="stylesheet" href="owl.carousel.min.css">
+    <link rel="stylesheet" href="owl.theme.default.min.css">
+    <link rel="stylesheet" href="magnific-popup.css">
+
+    <link rel="stylesheet" href="aos.css">
+
+    <link rel="stylesheet" href="ionicons.min.css">
     
-    
-    <style>
-          .top{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            margin: 1px;
-            padding: 1px;
-        }
-        #logo{
-            height: 80px;
-            width: 140px;
-
-        }
-        #name{
-            height: 100px;
-            width: 350px;
-
-        }
-        .box{
-          background-color: red;
-          text-align: center;
-          color: white;
-          font-weight: bold;
-          background-image: linear-gradient(to top, rgb(74, 0, 0), rgb(231, 130, 160));
-        }
-
-        .mnb{
-          margin: 20px;
-        }
-        
-        .nb{
-          border: 2px solid black;
-          border-radius: 10px;
-          text-align: center;
-          width: 340px;
-          height: 650px;
-          padding: 42px -5px;
-          margin: 2px 150px;
-          background-color: rgba(249, 249, 107, 0.164);
-          box-shadow: 4px 3px 5px black;
-          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-          font-weight: bold;
-          background-image: linear-gradient(to top, rgb(1, 1, 1), rgb(255, 244, 244));
-        }
-        #card1{
-          width: 325px;
-            height: 300px;
-            margin: 0%;
-            background-image: url(DIRECTOR.jpg);
-            background-size: cover;
-            background-position: absolute;
-            text-align: center; 
-        }
-        #card2{
-          padding: 5px;
-          text-align: center;
-          width: 300px;
-          height: 250px;
-          margin: 0px;
-          background-color: white;
-          font-weight: bolder;
-          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        }
-        .card{
-          display: flex;
-          align-items: center;
-          
-        }
-        .mnb{
-          display: flex;
-          justify-content: center;
-        }
-        #heading{
-          background-color: rgb(0, 0, 0);
-          font-weight: bolder;
-          color: white;
-          padding: 10px;
-        }
-        .maindiv{
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: center;
-          padding: 30px;
-          
-        }
-        .wp{
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: center;
-          font-weight: bolder;
-          padding: 25px;
-        }
-        .w{
-          text-align: center;
-          width: 1500px;
-          height: 250px;
-          padding: 15px;
-          margin: 0px;
-          background-color: white;
-          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-          font-weight: bolder;
-        }
-        .footer{
-          display: flex;
-          justify-content: center;
-          flex-wrap: wrap;
-          margin: 0px;
-          padding: 0px;
-          border: 1px solid black;
-          background-color: rgba(66, 2, 2, 0.721);
-          color: white;
-          background-image: linear-gradient(to top, rgba(0, 0, 0), rgb(175, 79, 79));
-        }
-        #add{
-          margin: 50px;
-          
-          
-        }
-        .ql{
-          padding: 50px;
-        }
-
-        .dr{
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: center;
-          margin: 5px;
-          
-        }
-
-        /* STYLING FOR NEWS */
-
-        .news{
-          display: flex;
-          flex-wrap: wrap;
-        }
-
-        .breaking-news-headline {
-  display: block;
-  position: absolute;
-  font-family: arial;
-  font-size: 13px;
-  margin-top: -22px;
-  color: white;
-  margin-left: 150px;
-  
-}
-
-.breaking-news-title {
-  background-color: #FFEA00;
-  display: block;
-  height: 40px;  
-  width: 100px;
-  font-family: arial;
-  font-size: 11px;
-  position: absolute; 
-  top: 0px;
-  margin-top: 0px;
-  margin-left: 20px;
-  padding-top: 10px;
-  padding-left: 10px;
-  z-index: 3;
-  &:before {
-    content:"";
-    position: absolute;
-    display: block;
-    width: 0px;
-    height: 0px;
-    top: 0;
-    left: -12px;
-    border-left:12px solid transparent;
-    border-right: 0px solid transparent;
-    border-bottom: 30px solid #FFEA00;
-  }
-  &:after {
-    content:"";
-    position: absolute;
-    display: block;
-    width: 0px;
-    height: 0px;
-    right: -12px;
-    top: 0;
-    border-right:12px solid transparent;
-    border-left: 0px solid transparent;
-    border-top: 30px solid #FFEA00;
-  }
-}
-
-#breaking-news-colour {
-  height: 30px;
-  width: 100%;
-  background-color: #3399FF;
-}
-
-#breaking-news-container {
-  height: 30px;
-  width: 100%;
-  overflow: hidden;
-  position: absolute;
-  &:before {
-    content: "";
-    width: 30px;
-    height: 30px;
-    background-color: #3399FF;
-    position: absolute;
-    z-index: 2;
-  }
-}
-
-.animated {
-  -webkit-animation-duration: 0.2s;
-  -webkit-animation-fill-mode: both;
-  -moz-animation-duration: 0.2s;
-  -moz-animation-fill-mode: both;
-  -webkit-animation-iteration-count: 1;
-  -moz-animation-iteration-count: 1;
-}
-
-.delay-animated {
-  -webkit-animation-duration: 0.4s;
-  -webkit-animation-fill-mode: both;
-  -moz-animation-duration: 0.4s;
-  -moz-animation-fill-mode: both;
-  -webkit-animation-iteration-count: 1;
-  -moz-animation-iteration-count: 1;
-  -webkit-animation-delay: 0.3s; 
-  animation-delay: 0.3s;
-}
-
-.scroll-animated {
-  -webkit-animation-duration: 3s;
-  -webkit-animation-fill-mode: both;
-  -moz-animation-duration: 3s;
-  -moz-animation-fill-mode: both;
-  -webkit-animation-iteration-count: 1; 
-  -moz-animation-iteration-count: 1;
-  -webkit-animation-delay: 0.5s; 
-  animation-delay: 0.5s;
-}
-
-.delay-animated2 {
-  -webkit-animation-duration: 0.4s;
-  -webkit-animation-fill-mode: both;
-  -moz-animation-duration: 0.4s;
-  -moz-animation-fill-mode: both;
-  -webkit-animation-iteration-count: 1; 
-  -moz-animation-iteration-count: 1;
-  -webkit-animation-delay: 0.5s; 
-  animation-delay: 0.5s;
-}
-
-.delay-animated3 {
-  -webkit-animation-duration: 5s;
-  -webkit-animation-fill-mode: both;
-  -moz-animation-duration: 5s;
-  -moz-animation-fill-mode: both;
-  -webkit-animation-iteration-count: 1; 
-  -moz-animation-iteration-count: 1;
-  -webkit-animation-delay: 0.5s; 
-  animation-delay: 3s;
-}
-
-.fadein {
-  -webkit-animation-name: fadein;
-  -moz-animation-name: fadein;
-  -o-animation-name: fadein;
-  animation-name: fadein;
-}
-
-@-webkit-keyframes fadein {
-  from {
-    margin-left: 1000px
-  }
-  to {
-    
-  } 
-}  
-@-moz-keyframes fadein {
-  from {
-    margin-left: 1000px
-  }
-  to {
-    
-  }  
-}
-
-.slidein {
-  -webkit-animation-name: slidein;
-  -moz-animation-name: slidein;
-  -o-animation-name: slidein;
-  animation-name: slidein;
-}
-
-@keyframes marquee {
-  0% { 
-    left: 0;
-  }
-  20% { 
-    left: 0; 
-  }
-  100% { left: -100%; }
-}
-
-.marquee {
-  animation: marquee 10s linear infinite;
-  -webkit-animation-duration: 10s;
-  -moz-animation-duration: 10s;
-  -webkit-animation-delay: 0.5s; 
-  animation-delay: 3s;
-}
-
-@-webkit-keyframes slidein {
-  from {
-    margin-left: 800px
-  }
-  to {
-    margin-top: 0px
-  } 
-}  
-@-moz-keyframes slidein {
-  from {
-    margin-left: 800px
-  }
-  to {
-    margin-top: 0px
-  }  
-}
-
-.slideup {
-  -webkit-animation-name: slideup;
-  -moz-animation-name: slideup;
-  -o-animation-name: slideup;
-  animation-name: slideup;
-}
-@-webkit-keyframes slideup {
-  from {
-    margin-top: 30px
-  }
-  to {
-    margin-top: 0;
-  } 
-}  
-@-moz-keyframes slideup {
-  from {
-    margin-top: 30px
-  }
-  to {
-    margin-top: 0;
-  } 
-}
-
-
-      
-   
-        
-        
-
-    </style>
+    <link rel="stylesheet" href="flaticon.css">
+    <link rel="stylesheet" href="icomoon.css">
+    <link rel="stylesheet" href="style.css">
   </head>
-
-<!-- BODY STARTS -->
-
-
   <body>
-
-    
-
-    <!-- NAME & LOGO -->
-    <div class="top">
-        <div><img src="new.jpg" id="logo" alt="error loading image"></div>
-        <div><img src="name.jpg" id="name" alt="error loading image"></div>
+	  <div class="py-2 bg-primary">
+    	<div class="container">
+    		<div class="row no-gutters d-flex align-items-start align-items-center px-3 px-md-0">
+	    		<div class="col-lg-12 d-block">
+		    		<div class="row d-flex">
+			    		<div class="col-md-5 pr-4 d-flex topper align-items-center">
+			    			<div class="icon bg-fifth mr-2 d-flex justify-content-center align-items-center"><span class="icon-map"></span></div>
+						    <span class="text">Near Railway Crossing, Lakshagrih Road, Handia Prayagraj</span>
+					    </div>
+					    <div class="col-md pr-4 d-flex topper align-items-center">
+					    	<div class="icon bg-secondary mr-2 d-flex justify-content-center align-items-center"><span class="icon-paper-plane"></span></div>
+						    <span class="text">youremail@email.com</span>
+					    </div>
+					    <div class="col-md pr-4 d-flex topper align-items-center">
+					    	<div class="icon bg-tertiary mr-2 d-flex justify-content-center align-items-center"><span class="icon-phone2"></span></div>
+						    <span class="text">6393407922, 6392319561</span>
+					    </div>
+				    </div>
+			    </div>
+		    </div>
+		  </div>
     </div>
-
-
-
-
-  
-
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ftco_navbar ftco-navbar-light" id="ftco-navbar">
+	    <div class="container d-flex align-items-center">
+			<a href="index.html" class="logo"><img src="new.jpg"  style="width: 80px;" class="img-fluid"></a>
+	    	<a class="navbar-brand" href="index.html">ST V.N. PUBLIC SCHOOL</a>
+			
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav ml-auto">
+	        	<li class="nav-item active"><a href="index.html" class="nav-link pl-0">Home</a></li>
+	        	<li class="nav-item"><a href="aboutnew.html" class="nav-link">About</a></li>
+	        	<li class="nav-item"><a href="teachersnew.html" class="nav-link">Teachers</a></li>
+	        	<li class="nav-item"><a href="facilitiesnew.html" class="nav-link">Facility</a></li>
+	        	<li class="nav-item"><a href="imagenew.html" class="nav-link">Images</a></li>
+	        	<li class="nav-item"><a href="edutournew.html" class="nav-link">Education Tour(2023-24)</a></li>
+	        	<li class="nav-item"><a href="artcomnew.html" class="nav-link">Art Competition</a></li>
+	          <li class="nav-item"><a href="contactnew.html" class="nav-link">Contact</a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+    <!-- END nav -->
     
-
-    <!-- NAVIGATION BAR -->
-
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid" style="background-color: chartreuse; font-style: inherit; background-image: linear-gradient(to top, rgb(74, 0, 0), rgb(231, 130, 160))">
-          <a class="navbar-brand" href="#" style="color: white;">St.V.N.PUBLIC SCHOOL</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html"style="color: white;">HOME</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html" style="color: white;">ABOUT US</a>
-              <li class="nav-item">
-                <a class="nav-link" href="facility.html" style="color: white;">FACILITY</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html" style="color: white;">CONTACT</a>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" style="color: white;" href="gallary.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  GALLARY
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="image.html">IMAGES</a></li>
-                  <li><a class="dropdown-item" href="drawingcom.html">DRAWING COMPETITION (2023-2024)</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="edutour.html">EDUCATIONAL TOUR (2023-2024)</a></li>
-                </ul>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+    <section class="home-slider owl-carousel">
+      <div class="slider-item" style="background-image:url(slide8.jpg);">
+      	<div class="overlay"></div>
+        <div class="container">
+          <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
+          <div class="col-md-8 text-center ftco-animate">
           </div>
         </div>
-      </nav>  
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    
-
-
-    <!-- SLIDE STARTS -->
-    
-    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="slide8.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="slide2.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="slide1.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="slide6.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="slide5.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="slide4.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="slide3.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="slide7.jpg" class="d-block w-100" alt="...">
-          </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
 
+      <div class="slider-item" style="background-image:url(slide2.jpg);">
+      	<div class="overlay"></div>
+        <div class="container">
+          <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
+          <div class="col-md-8 text-center ftco-animate">
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <div class="slider-item" style="background-image:url(slide1.jpg);">
+      	<div class="overlay"></div>
+        <div class="container">
+          <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
+          <div class="col-md-8 text-center ftco-animate">
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <div class="slider-item" style="background-image:url(slide4.jpg);">
+      	<div class="overlay"></div>
+        <div class="container">
+          <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
+          <div class="col-md-8 text-center ftco-animate">
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <div class="slider-item" style="background-image:url(slide5.jpg);">
+      	<div class="overlay"></div>
+        <div class="container">
+          <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
+          <div class="col-md-8 text-center ftco-animate">
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <div class="slider-item" style="background-image:url(slide6.jpg);">
+      	<div class="overlay"></div>
+        <div class="container">
+          <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
+          <div class="col-md-8 text-center ftco-animate">
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <div class="slider-item" style="background-image:url(slide7.jpg);">
+      	<div class="overlay"></div>
+        <div class="container">
+          <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
+          <div class="col-md-8 text-center ftco-animate">
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ftco-services ftco-no-pb">
+			<div class="container-wrap">
+				<div class="row no-gutters">
+          <div class="col-md-3 d-flex services align-self-stretch pb-4 px-4 ftco-animate bg-primary">
+            <div class="media block-6 d-block text-center">
+              <div class="icon d-flex justify-content-center align-items-center" style="background-color: aqua;">
+            		
+              </div>
+              <div class="media-body p-2 mt-3">
+                <h3 class="heading">Qualified Teachers</h3>
+                <p>A school is only as strong as its educators, and at St. VNPS we take pride in our teaching staff. These educators bring a dedication to the classroom, ensuring that each students receives personalized attention and guidance.</p>
+              </div>
+            </div>      
+          </div>
+          <div class="col-md-3 d-flex services align-self-stretch pb-4 px-4 ftco-animate bg-tertiary">
+            <div class="media block-6 d-block text-center">
+              <div class="icon d-flex justify-content-center align-items-center" style="background-color: rgb(255, 0, 217);">
+            		
+              </div>
+              <div class="media-body p-2 mt-3">
+                <h3 class="heading">Learning Environment</h3>
+                <p>We encourage students to take part in the day to day activities of the school for their all round developments.</p>
+              </div>
+            </div>    
+          </div>
+          <div class="col-md-3 d-flex services align-self-stretch pb-4 px-4 ftco-animate bg-fifth">
+            <div class="media block-6 d-block text-center">
+              <div class="icon d-flex justify-content-center align-items-center" style="background-color: rgb(234, 217, 24);">
+            		
+              </div>
+              <div class="media-body p-2 mt-3">
+                <h3 class="heading">Computer Lab</h3>
+                <p>We provide computer lab to teach important concepts like how to use computer. The students are taught by a trained computer teacher.</p>
+              </div>
+            </div>      
+          </div>
+          <div class="col-md-3 d-flex services align-self-stretch pb-4 px-4 ftco-animate bg-quarternary">
+            <div class="media block-6 d-block text-center">
+              <div class="icon d-flex justify-content-center align-items-center" style="background-color: rgb(65, 253, 27);">
+            		
+              </div>
+              <div class="media-body p-2 mt-3">
+                <h3 class="heading">Transport Available</h3>
+                <p>We are committed to provide a safe, comfortable and effective transport system and thus make parents tension free.</p>
+              </div>
+            </div>      
+          </div>
+        </div>
+			</div>
+		</section>
+		
+		<section class="ftco-section ftco-no-pt ftc-no-pb">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-5 order-md-last wrap-about py-5 wrap-about bg-light">
+						<div class="text px-4 ftco-animate">
+	          	<h2 class="mb-4">WELCOME TO ST. V. N. PUBLIC SCHOOL</h2>
+							<p>St. V. N. Public School, affiliated to Central Board of Secondary Education (CBSE) is located at Lakshagrih Road, Handia, Prayagraj.</p>
+							<p>Our dream is that each and every child of this area can receive the education at a very nominal and affordable fees to get rid of ignorance and illiteracy.</p>
+							
+						</div>
+						<div class="director">
+	          	<h2 class="mb-4">Director's Message</h2>
+				  <div class="staff">
+					<div class="img-wrap d-flex align-items-stretch">
+						<div class="img align-self-stretch" style="background-image: url(DIRECTOR.jpg);" ></div>
+					</div>
+					<div class="text pt-3 text-center">
+						<h3>Mr. Ram Lakhan Yadav</h3>
+						<span class="position mb-2">DIRECTOR(ST. V.N. PUBLIC SCHOOL)</span>
+						<div class="faded">
+							<p>We are pleased that you have taken the time to visit our website. We are committed to forster the growth and development of the children placed in our care. We aim to train them into value based, broad minded and creative children.</p>
+		
+		  </div>
+					</div>
+				</div>
+							
+						</div>
+					</div>
+					<div class="col-md-7 wrap-about py-5 pr-md-4 ftco-animate">
+          	<h2 class="mb-4">Our Facilities</h2>
+						
+						<div class="row mt-5">
+							<div class="col-lg-6">
+								<div class="services-2 d-flex">
+									<div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center" style="background-color: rgb(166, 0, 255);"></div>
+									<div class="text">
+										<h3>CO-CURRICULAR ACTIVITIES</h3>
+										<p>At St.VNPS, we support a curriculum that goes beyond the classroom and incorporates creativity, critical thinking, and practical skills.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="services-2 d-flex">
+									<div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center" style="background-color: rgb(255, 0, 0);"></div>
+									<div class="text">
+										<h3>Supportive Teachers</h3>
+										<p>Teachers have a strong influence in shaping a student's attitude and personality. Our teachers support their students in achieving academic excellence and attaining their personal goals.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="services-2 d-flex">
+									<div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center" style="background-color: rgb(255, 145, 0);"></div>
+									<div class="text">
+										<h3>Discipline & Positive Environment</h3>
+										<p>In our school, students follow discipline to acquire their desired goals and valuable knowledge. Discipline allows students to become more focused and helps them to score well in examinations.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="services-2 d-flex">
+									<div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center" style="background-color: rgb(0, 21, 255);"></div>
+									<div class="text">
+										<h3>Sufficient Space</h3>
+										<p>The classes are equipped approprietly and offer enough space for learning materials.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="services-2 d-flex">
+									<div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center" style="background-color: rgb(255, 255, 0);"></div>
+									<div class="text">
+										<h3>CCTV Surveillance System</h3>
+										<p>We provide CCTV Surveillance System that help in improvement safety and security both inside the school ground and the surrounding ares.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="services-2 d-flex">
+									<div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center" style="background-color: rgb(136, 0, 255);"></div>
+									<div class="text">
+										<h3>Sports Facilities</h3>
+										<p>School sports are essential because they assist children in developing critical life skills, including leadership, teamwork and interpersonal communication. The school organizes sport competitions for every classes.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section class="ftco-intro" style="background-image: url(bg_3.jpg);" data-stellar-background-ratio="0.5">
+			<div class="overlay"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-9">
+						<h2>STRENGTH IS LIFE & WEAKNESS IS DEATH</h2>
+						<p class="mb-0">Weakness leads to slavery. Weakness leads to all kinds of misery, physical and mental situations. There are thounds of microbes surrounding us but they can not harm us unless we become weak.</p>
+					</div>
+					<div class="col-md-3 d-flex align-items-center">
+						
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="ftco-section ftco-no-pb">
+			<div class="container">
+				<div class="row justify-content-center mb-5 pb-2">
+          <div class="col-md-8 text-center heading-section ftco-animate">
+            <h2 class="mb-4"><span>Meet Our</span> Teachers</h2>
+            <p>"Teaching is the one profession that creates all other professions."</p>
+            <p>"Teachers have a remarkable impact on students' lives. They are crucial in shaping the character of students"</p>
+          </div>
+        </div>	
+				<div class="row">
+					<div class="col-md-6 col-lg-3 ftco-animate">
+						<div class="staff">
+							<div class="img-wrap d-flex align-items-stretch">
+								<div class="img align-self-stretch" style="background-image: url(ngn1.jpg);"></div>
+							</div>
+							<div class="text pt-3 text-center">
+								<h3>Mr. Rupesh Singh</h3>
+								<span class="position mb-2">Academic Incharge</span>
+			
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-3 ftco-animate">
+						<div class="staff">
+							<div class="img-wrap d-flex align-items-stretch">
+								<div class="img align-self-stretch" style="background-image: url(ngn7.jpg);"></div>
+							</div>
+							<div class="text pt-3 text-center">
+								<h3>Mr. Vimlesh Singh</h3>
+								<span class="position mb-2">Ass. Teacher</span>
+				
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-3 ftco-animate">
+						<div class="staff">
+							<div class="img-wrap d-flex align-items-stretch">
+								<div class="img align-self-stretch" style="background-image: url(ngn4.jpg);"></div>
+							</div>
+							<div class="text pt-3 text-center">
+								<h3>Mr. Alha Kumar</h3>
+								<span class="position mb-2">Ass. Teacher</span>
+			
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-3 ftco-animate">
+						<div class="staff">
+							<div class="img-wrap d-flex align-items-stretch">
+								<div class="img align-self-stretch" style="background-image: url(ng6.jpg);"></div>
+							</div>
+							<div class="text pt-3 text-center">
+								<h3>Mr. Ankit Yadav</h3>
+								<span class="position mb-2">Ass. Teacher</span>
+			
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
 
 
 
-      <!-- Ideal Line -->
+		
+	
+					<section class="ftco-section ftco-counter img" id="section-counter" style="background-image: url(bg_4.jpg);" data-stellar-background-ratio="0.5">
+						<div class="container">
+							<div class="row justify-content-center mb-5 pb-2">
+						  <div class="col-md-8 text-center heading-section heading-section-black ftco-animate">
+							<h2 class="mb-4"><span>7 Years of</span> Experience</h2>
+							<p>Teaching is our passion and your child is our priority</p>
+						  </div>
+						</div>	
+							<div class="row d-md-flex align-items-center justify-content-center">
+								<div class="col-lg-10">
+									<div class="row d-md-flex align-items-center">
+								  <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+									<div class="block-18">
+										<div class="icon"><span class="flaticon-doctor"></span></div>
+									  <div class="text">
+										<strong class="number" data-number="15">0</strong>
+										<span>Qualified Teachers</span>
+									  </div>
+									</div>
+								  </div>
+								  <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+									<div class="block-18">
+										<div class="icon"><span class="flaticon-doctor"></span></div>
+									  <div class="text">
+										<strong class="number" data-number="370">0</strong>
+										<span>Students</span>
+									  </div>
+									</div>
+								  </div>
+								  <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+									<div class="block-18">
+										<div class="icon"><span class="flaticon-doctor"></span></div>
+									  <div class="text">
+										<strong class="number" data-number="370">0</strong>
+										<span>Happy Students</span>
+									  </div>
+									</div>
+								  </div>
+								  <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+									<div class="block-18">
+										<div class="icon"><span class="flaticon-doctor"></span></div>
+									  <div class="text">
+										<strong class="number" data-number="370">0</strong>
+										<span>Happy Parents</span>
+									  </div>
+									</div>
+								  </div>
+							  </div>
+						  </div>
+						</div>
+						</div>
+					</section>
 
+
+
+					<div class="col-md-6 col-lg-3 ftco-animate">
+						<div class="staff">
+							
+							<div class="text pt-3 text-center">
+								<h3></h3>
+								<span class="position mb-2"></span>
+								<div class="faded">
+									
+				
+	              </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		
+<!-- News Start -->
+
+    <section class="ftco-section testimony-section bg-light">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-2">
+          <div class="col-md-8 text-center heading-section ftco-animate">
+            <h2 class="mb-4"><span>News &</span>Announcements</h2>    
+          </div>
+        </div>
+
+		
+        <div class="row ftco-animate justify-content-center">
+          <div class="col-md-12">
+            <div class="carousel-testimony owl-carousel">
+              <div class="item">
+                <div class="testimony-wrap d-flex">
+                  <div class="user-img mr-4" style="background-image: url(new.jpg)">
+                  </div>
+                  <div class="text ml-2 bg-light">
+                  	<span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-quote-left"></i>
+                    </span>
+                    <p>Dear parents it is informed you that the school will be closed on tomorrow(17-07-2024) on account of Muharram. The school will be reopen on Thursday(18-07-2024) on proper time.</p>
+                    <p class="name">Regards</p>
+                    <p class="name">Principal</p>
+                    <p class="name">St. V. N. Public School Handia Prayagraj</p>
+                    <span class="position">July 16 2024</span>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="item">
+                <div class="testimony-wrap d-flex">
+                  <div class="user-img mr-4" style="background-image: url(new.jpg)">
+                  </div>
+                  <div class="text ml-2 bg-light">
+                  	<span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-quote-left"></i>
+                    </span>
+					<p>Dear parents it is informed you that the school will be closed on tomorrow(17-07-2024) on account of Muharram. The school will be reopen on Thursday(18-07-2024) on proper time.</p>
+                    <p class="name">Regards</p>
+                    <p class="name">Principal</p>
+                    <p class="name">St. V. N. Public School Handia Prayagraj</p>
+                    <span class="position">July 16 2024</span>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="item">
+                <div class="testimony-wrap d-flex">
+                  <div class="user-img mr-4" style="background-image: url(new.jpg)">
+                  </div>
+                  <div class="text ml-2 bg-light">
+                  	<span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-quote-left"></i>
+                    </span>
+                    <p>Dear parents it is informed you that the school will be closed on tomorrow(17-07-2024) on account of Muharram. The school will be reopen on Thursday(18-07-2024) on proper time.</p>
+                    <p class="name">Regards</p>
+                    <p class="name">Principal</p>
+                    <p class="name">St. V. N. Public School Handia Prayagraj</p>
+                    <span class="position">July 16 2024</span>
+                  </div>
+                </div>
+              </div>
+
+
+
+              <div class="item">
+                <div class="testimony-wrap d-flex">
+                  <div class="user-img mr-4" style="background-image: url(new.jpg)">
+                  </div>
+                  <div class="text ml-2 bg-light">
+                  	<span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-quote-left"></i>
+                    </span>
+					<p>Dear parents it is informed you that the school will be closed on tomorrow(17-07-2024) on account of Muharram. The school will be reopen on Thursday(18-07-2024) on proper time.</p>
+                    <p class="name">Regards</p>
+                    <p class="name">Principal</p>
+                    <p class="name">St. V. N. Public School Handia Prayagraj</p>
+                    <span class="position">July 16 2024</span>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="item">
+                <div class="testimony-wrap d-flex">
+                  <div class="user-img mr-4" style="background-image: url(new.jpg)">
+                  </div>
+                  <div class="text ml-2 bg-light">
+                  	<span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-quote-left"></i>
+                    </span>
+					<p>Dear parents it is informed you that the school will be closed on tomorrow(17-07-2024) on account of Muharram. The school will be reopen on Thursday(18-07-2024) on proper time.</p>
+                    <p class="name">Regards</p>
+                    <p class="name">Principal</p>
+                    <p class="name">St. V. N. Public School Handia Prayagraj</p>
+                    <span class="position">July 16 2024</span>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="item">
+                <div class="testimony-wrap d-flex">
+                  <div class="user-img mr-4" style="background-image: url(new.jpg)">
+                  </div>
+                  <div class="text ml-2 bg-light">
+                  	<span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-quote-left"></i>
+                    </span>
+					<p>Dear parents it is informed you that the school will be closed on tomorrow(17-07-2024) on account of Muharram. The school will be reopen on Thursday(18-07-2024) on proper time.</p>
+                    <p class="name">Regards</p>
+                    <p class="name">Principal</p>
+                    <p class="name">St. V. N. Public School Handia Prayagraj</p>
+                    <span class="position">July 16 2024</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ftco-section ftco-consult ftco-no-pt ftco-no-pb" style="background-image: url(bg_5.jpg);" data-stellar-background-ratio="0.5">
+    	<div class="container">
+    		<div class="row justify-content-end">
+    			<div class="col-md-6 py-5 px-md-5 bg-primary">
+	          <div class="heading-section heading-section-white ftco-animate mb-5">
+	            <h2 class="mb-4">Contact Us</h2>
+	            <p>Feel free to contact us!</p>
+	          </div>
+	          <form action="#" class="appointment-form ftco-animate">
+	    				<div class="d-md-flex">
+		    				<div class="form-group">
+		    					<input type="text" class="form-control" placeholder="First Name">
+		    				</div>
+		    				<div class="form-group ml-md-4">
+		    					<input type="text" class="form-control" placeholder="Last Name">
+		    				</div>
+	    				</div>
+	    				<div class="d-md-flex">
+	    					<div class="form-group">
+		    					<div class="form-field">
+          					<div class="select-wrap">
+                      <div class="icon"><span class="ion-ios-arrow-down"></span></div>
+                      <select name="" id="" class="form-control">
+                      	<option value="">Select Classes</option>
+                        <option value="">Nursery</option>
+                        <option value="">K.G.</option>
+                        <option value="">1 to 5</option>
+                        <option value="">6 to 8</option>
+
+                      </select>
+                    </div>
+		              </div>
+		    				</div>
+	    					<div class="form-group ml-md-4">
+		    					<input type="text" class="form-control" placeholder="Phone">
+		    				</div>
+	    				</div>
+	    				<div class="d-md-flex">
+	    					<div class="form-group">
+		              <textarea name="" id="" cols="30" rows="2" class="form-control" placeholder="Message"></textarea>
+		            </div>
+		            <div class="form-group ml-md-4">
+		              <input type="submit" value="Send" class="btn btn-secondary py-3 px-4">
+		            </div>
+	    				</div>
+	    			</form>
+    			</div>
+        </div>
+    	</div>
+    </section>
+
+   
+		<section class="ftco-section bg-light">
+			<div class="container">
+				<div class="row justify-content-center mb-5 pb-2">
+
+        </div>
+				<div class="row">
+          <div class="col-md-6 col-lg-4 ftco-animate">
+            <div class="blog-entry">
+              <a href="blog-single.html" class="block-20 d-flex align-items-end" style="background-image: url('BANNER\ NO.1.jpg'); height: 300px; width: 360px;"></a>
+           
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 ftco-animate">
+            <div class="blog-entry">
+              <a href="blog-single.html" class="block-20 d-flex align-items-end" style="background-image: url('BANNER\ NO.2.jpg'); height: 300px; width: 360px;">
+			
+              </a>
+         
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 ftco-animate">
+            <div class="blog-entry">
+              <a href="blog-single.html" class="block-20 d-flex align-items-end" style="background-image: url('BANNER\ NO.3.jpg'); height: 300px; width: 360px;">
+				
+              </a>
+         
+            </div>
+          </div>
+        </div>
+			</div>
+		</section>
+   
+				<div class="row">
+          <div class="col-md-6 col-lg-4 ftco-animate">
+            <div class="blog-entry">
+              <a href="blog-single.html" class="block-20 d-flex align-items-end" style="background-image: url('BANNER\ NO.6.jpg'); height: 300px; width: 360px;"></a>
+         
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 ftco-animate">
+            <div class="blog-entry">
+              <a href="blog-single.html" class="block-20 d-flex align-items-end" style="background-image: url('BANNER\ NO.7.jpg'); height: 300px; width: 360px;">
+			
+              </a>
       
-        <div class="box">
-          <p>STRENGTH IS LIFE & WEAKNESS IS DEATH</p>
-       </div>
-
-       <!-- NEWS BAR -->
-<div class="news">
-  <div id="breaking-news-container">
-    <div id="breaking-news-colour" class="slideup animated">
-                    
-   </div>  
-   <span class="breaking-news-title delay-animated slidein">
-    // CONTACT //
-    </span> 
-    <a class="breaking-news-headline delay-animated2 fadein marquee">
-    Lakshagrih Road Handia Prayagraj, Mob- 6393407922, 6392319561
-    </a>  
-    </div>
-</div>
-
-
-       <!-- WELCOME PARA -->
-
-       <div class="wp">
-        <div class="w">
-          <h4 style="font-weight: bolder;">WELCOME TO ST. V. N. PUBLIC SCHOOL</h4>
-          <P>St. V. N. Public School, affiliated to Central Board of Secondary Education (CBSE) is located at Lakshagrih Road, Handia, Prayagraj. Our dream is that each and every child of this area can receive the education at a very nominal and affordable fees to get rid of ignorance and illiteracy. </P>
-        </div>
-      </div>
-
-
-      <div class="maindiv">
-
-                   <!-- CARD STARTS -->
-
-      <div class="card">
-        <div id="card1"></div>
-        <div id="card2"><h4>DIRECTOR'S MESSAGE</h4><p>We are pleased that you have taken the time to visit our website. We are committed to forster the growth and development of the children placed in our care. We aim to train them into value based, broad minded and creative children. </p></div>
-      </div>
-
-      <!-- BANNER SLIDE -->
-
-      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="BANNER NO.1.jpg" class="d-block w-100" alt="...">
+            </div>
           </div>
-          <div class="carousel-item">
-            <img src="BANNER NO.2.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="BANNER NO.3.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="BANNER NO.4.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="BANNER NO.5.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="BANNER NO.6.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="BANNER NO.7.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="BANNER NO.8.jpg" class="d-block w-100" alt="...">
+          <div class="col-md-6 col-lg-4 ftco-animate">
+            <div class="blog-entry">
+              <a href="blog-single.html" class="block-20 d-flex align-items-end" style="background-image: url('BANNER\ NO.4.jpg'); height: 300px; width: 360px;">
+				
+              </a>
+     
+            </div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
+			</div>
+		
 
-      <!--NOTICE BOARD STARTS-->
+		<section class="ftco-gallery">
+    	<div class="container-wrap">
+    		<div class="row no-gutters">
+					<div class="col-md-3 ftco-animate">
+						<a href="image_1.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(course-1.jpg); ">
+							<div class="icon mb-4 d-flex align-items-center justify-content-center">
+    						<span class="icon-instagram"></span>
+    					</div>
+						</a>
+					</div>
+					<div class="col-md-3 ftco-animate">
+						<a href="image_2.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(image_2.jpg);">
+							<div class="icon mb-4 d-flex align-items-center justify-content-center">
+    						<span class="icon-instagram"></span>
+    					</div>
+						</a>
+					</div>
+					<div class="col-md-3 ftco-animate">
+						<a href="image_3.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(image_3.jpg);">
+							<div class="icon mb-4 d-flex align-items-center justify-content-center">
+    						<span class="icon-instagram"></span>
+    					</div>
+						</a>
+					</div>
+					<div class="col-md-3 ftco-animate">
+						<a href="image_4.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(image_4.jpg);">
+							<div class="icon mb-4 d-flex align-items-center justify-content-center">
+    						<span class="icon-instagram"></span>
+    					</div>
+						</a>
+					</div>
+        </div>
+    	</div>
+    </section>
 
-      <div class="mnb">
-        <div class="nb">
-          <h6 id="heading">NOTICE BOARD</h6>
-          <P style="background-color: #FFEA00;">[1 March 2024] ~ <em>It is informed you that the school will be closed on tomorrow due to educational tour.</em></P>
-          <P style="background-color: #3399FF;">[20 Feb  2024] ~ <em>It is informed you that the annual test will begin from 21 Feb 2024.</em></P>
-          <P style="background-color: chartreuse;">[13 Feb  2024] ~ <em>It is informed you that the school will be closed on tomorrow due to Basant Panchami.</em></P>
-          <P style="background-color: darkorange;">[09 Feb  2024] ~ <em>It is informed you that Gk & Drawing competition will be held on tomorrow.</em></P>
-          <P style="background-color: rgb(255, 200, 0);">[31 Jan  2024] ~ <em>It is informed you that the school time has been changed. The new time is 08:50 am to 02:15 pm.</em></P>
-          <P style="background-color: rgb(0, 255, 170);">[30 Jan  2024] ~ <em>It is informed you that the school will be half time on tomorrow.</em></P>
-          <P style="background-color: rgb(201, 52, 255);">[25 Jan  2024] ~ <em>It is informed you that the school time on tomorrow is from 10:00 am to 12:00 pm.</em></P>
-          
+		
+    <footer class="ftco-footer ftco-bg-dark ftco-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-6 col-lg-3">
+            <div class="ftco-footer-widget mb-5">
+            	<h2 class="ftco-heading-2">Have a Question?</h2>
+            	<div class="block-23 mb-3">
+	              <ul>
+	                <li><span class="icon icon-map-marker"></span><span class="text">Near Railway Crossing, Lakshagrih Road, Handia Prayagraj</span></li>
+	                <li><a href="#"><span class="icon icon-phone"></span><span class="text">6393407922, 6392319561</span></a></li>
+	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@yourdomain.com</span></a></li>
+	              </ul>
+	            </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="ftco-footer-widget mb-5 ml-md-4">
+              <h2 class="ftco-heading-2">Links</h2>
+              <ul class="list-unstyled">
+                <li><a href="index.html"><span class="ion-ios-arrow-round-forward mr-2" style="background-color: rgb(255, 0, 0);"></span>Home</a></li>
+                <li><a href="aboutnew.html"><span class="ion-ios-arrow-round-forward mr-2" style="background-color: rgb(255, 255, 0);"></span>About</a></li>
+                <li><a href="teachersnew.html"><span class="ion-ios-arrow-round-forward mr-2" style="background-color: rgb(255, 255, 0);"></span>Teachers</a></li>
+                <li><a href="facilitiesnew.html"><span class="ion-ios-arrow-round-forward mr-2" style="background-color: rgb(0, 255, 0);"></span>Facility</a></li>
+                <li><a href="imagenew.html"><span class="ion-ios-arrow-round-forward mr-2" style="background-color: rgb(0, 255, 0);"></span>Images</a></li>
+                <li><a href="edutournew.html"><span class="ion-ios-arrow-round-forward mr-2" style="background-color: rgb(0, 26, 255);"></span>Educational Tour(2023-24)</a></li>
+                <li><a href="artcomnew.html"><span class="ion-ios-arrow-round-forward mr-2" style="background-color: rgb(255, 0, 234);"></span>Art Competition</a></li>
+                <li><a href="contactnew.html"><span class="ion-ios-arrow-round-forward mr-2" style="background-color: rgb(255, 153, 0);"></span>Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="ftco-footer-widget mb-5">
+            	<h2 class="ftco-heading-2">Subscribe Us!</h2>
+              <form action="#" class="subscribe-form">
+                <div class="form-group">
+                  <input type="text" class="form-control mb-2 text-center" placeholder="Enter email address">
+                  <input type="submit" value="Subscribe" class="form-control submit px-3">
+                </div>
+              </form>
+            </div>
+            <div class="ftco-footer-widget mb-5">
+            	<h2 class="ftco-heading-2 mb-0"></h2>
+            	<ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
+                <li class="ftco-animate"></li>
+                <li class="ftco-animate"></li>
+                <li class="ftco-animate"></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
 
+            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved |<a href="https://sriramin.github.io/com/"> Designed & Maintained by SRI RAM INFOTECH</a>  <i class="icon-heart" aria-hidden="true"></i><a href=""></a>
+  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+          </div>
         </div>
       </div>
-
-
-      </div>
-      
+    </footer>
     
-<!-- ADDRESS -->
-<div class="footer">
-  
-  
-  <div id="add">
-    <h4>ADDRESS</h4>
-    <h6>Lakshagrih Road, Handia, Prayagraj, U.P.</h6>
-    <h6>Pin Code - 221503</h6>
-  </div>
-
-  <!-- QUICK LINKS -->
-
-  <div class="ql">
-    <h4>QUICK LINKS</h4>
-    <div>
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="about.html">ABOUT US</a>
-        <li class="nav-item">
-          <a class="nav-link" href="facility.html">FACILITY</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contact.html">CONTACT</a>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="gallary.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            GALLARY
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="image.html">IMAGES</a></li>
-            <li><a class="dropdown-item" href="drawingcom.html">DRAWING COMPETITION (2023-2024)</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="edutour.html">EDUCATIONAL TOUR (2023-2024)</a></li>
-          </ul>
-        </li>
-      </ul>
-
-  </div>
-
-  
-</div>
   
 
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
+
+  <script src="jquery.min.js"></script>
+  <script src="jquery-migrate-3.0.1.min.js"></script>
+  <script src="popper.min.js"></script>
+  <script src="bootstrap.min.js"></script>
+  <script src="jquery.easing.1.3.js"></script>
+  <script src="jquery.waypoints.min.js"></script>
+  <script src="jquery.stellar.min.js"></script>
+  <script src="owl.carousel.min.js"></script>
+  <script src="jquery.magnific-popup.min.js"></script>
+  <script src="aos.js"></script>
+  <script src="jquery.animateNumber.min.js"></script>
+  <script src="scrollax.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="google-map.js"></script>
+  <script src="main.js"></script>
     
-
- 
-
-</body>
+  </body>
 </html>
